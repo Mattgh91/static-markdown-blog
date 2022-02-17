@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { splitString } from '@/utils/index';
 import styles from '@/styles/TextAnimation.module.css';
 
 export default function TextAnimation() {
@@ -33,28 +34,6 @@ export default function TextAnimation() {
     }, []);
 
     const string = "Hey, guess which animation was actually way more of a pain in the arse than I thought it would be. This boiiii. I hope this isn't a foreshadowing of things to come.";
-
-    const splitString= (n, str) => {
-        const arr = str?.split(' ');
-        let result = []
-        let subStr = arr[0]
-
-        for (let i = 1; i < arr.length; i++) {
-            let word = arr[i]
-            if (subStr.length + word.length + 1 <= n) {
-                subStr = subStr + ' ' + word
-            } else {
-                result.push(subStr);
-                subStr = word
-            }
-        }
-
-        if (subStr.length) {
-            result.push(subStr)
-        }
-
-        return result;
-    }
 
     const newitems = splitString(20, string).map((string, idx) => {
         return (
