@@ -4,7 +4,9 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { splitString } from '@/utils/index';
 import styles from '@/styles/TextAnimation.module.css';
 
-export default function TextAnimation() {
+export default function TextAnimation({
+    string = "Hey, guess which animation was actually way more of a pain in the arse than I thought it would be. This boiiii. I hope this isn't a foreshadowing of things to come."
+}) {
     const container = React.useRef(null);
 
     React.useEffect(() => {
@@ -32,8 +34,6 @@ export default function TextAnimation() {
             );
         });
     }, []);
-
-    const string = "Hey, guess which animation was actually way more of a pain in the arse than I thought it would be. This boiiii. I hope this isn't a foreshadowing of things to come.";
 
     const newitems = splitString(20, string).map((string, idx) => {
         return (

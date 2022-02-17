@@ -19,7 +19,6 @@ export default function BlogPostPage({
     content,
     slug,
 }) {
-    console.log(marked);
     return (
         <Layout title={title}>
             <Link href='/blog'>Go Back</Link>
@@ -61,8 +60,6 @@ export async function getStaticPaths() {
             }
         }
     });
-
-    console.log({ paths });
 
     return {
         paths,
