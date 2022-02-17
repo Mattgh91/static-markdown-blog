@@ -5,11 +5,13 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import Post from '@/components/Post';
 import { sortByDate } from '@/utils/index';
+import TextAnimation from '@/components/TextAnimation';
 
 export default function HomePage({ posts }) {
     return (
         <Layout>
             <h1 className='text-5xl border-b-4 p-5 font-bold'>Latest Posts</h1>
+            <TextAnimation/> 
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {posts.map((post, index) => (
                     <Post key={index} post={post} />

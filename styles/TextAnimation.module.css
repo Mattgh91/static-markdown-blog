@@ -1,0 +1,46 @@
+.spacer {
+    height: 400px;
+    width: 100%;
+    display: block;
+}
+
+.container {
+    position: relative;
+    padding: 25px;
+}
+
+.text {
+    display: block;
+    font-size: 72px;
+    max-width: 750px;
+    color: black;
+    position: relative;
+}
+
+.textspan {
+    display: block;
+    font-size: 72px;
+    max-width: 750px;
+    color: black;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.textoverlay {
+    background: #fff;
+    height: 100%;
+    left: 0;
+    opacity: .65;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    width: 100%;
+    will-change: "transform";
+    transform: scale(1, 1);
+}
