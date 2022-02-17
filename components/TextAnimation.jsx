@@ -48,5 +48,5 @@ export default function TextAnimation({
         <div className={styles.container} ref={container}>
             {newitems}
         </div>
-    )
+    );
 }
