@@ -28,7 +28,7 @@ export default function TextAnimation({
                         scrub: 0.6,
                         start: 'center 30%',
                         end: 'center 10%',
-                        markers: true,
+                        // markers: true,
                     }
                 }
             );
