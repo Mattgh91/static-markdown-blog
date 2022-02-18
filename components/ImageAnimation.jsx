@@ -18,7 +18,7 @@ export default function ImageAnimation() {
 
             ScrollTrigger.create({
                 trigger: image,
-                start: "top top",
+                start: 'top top',
                 pin: !shouldPin,
                 pinSpacing: false,
                 invalidateOnRefresh: true,

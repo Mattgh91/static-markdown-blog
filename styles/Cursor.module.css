@@ -1,0 +1,23 @@
+.cursorcontainer {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transform-origin: 66% 66%;
+    pointer-events: none;
+    transition: width 0.3s, height 0.3s, opacity 0.3s, top 0.3s, left 0.3s;
+    z-index: 10;
+    top: -10px;
+    left: -10px;
+}
+
+.hover {
+    background-color: #7730db;
+    opacity: 0.85;    
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: -25px;
+}

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
+import CursorAnimation from './CursorAnimation';
 
 export default function Layout({ title, children, description, keywords }) {
     return (
@@ -10,6 +11,7 @@ export default function Layout({ title, children, description, keywords }) {
                 <meta name="keywords" content={keywords} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <CursorAnimation />
             <Header />
             <main className="container mx-auto my-7">
                 {children}
