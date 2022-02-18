@@ -28,9 +28,9 @@ export default function ImageAnimation() {
 
     return (
         <div ref={container}>
-            <img src="/images/posts/img7.jpg" alt="" />
-            <img src="/images/posts/img6.jpg" alt="" />
-            <img src="/images/posts/img5.jpg" alt="" style={{ position: 'relative', }} />
+            <img src="/images/posts/img7.jpg" alt="" width={1280} height={853} />
+            <img src="/images/posts/img6.jpg" alt="" width={1280} height={853} />
+            <img src="/images/posts/img5.jpg" alt="" style={{ position: 'relative', }} width={1280} height={853} />
         </div>
     );
 }

@@ -17,7 +17,7 @@ export default function CursorAnimation() {
     }, []);
 
     React.useEffect(() => {
-        const a = document.querySelectorAll('a');
+        const a = [...document.querySelectorAll('a'), ...document.querySelectorAll('.cursor-pointer')];
 
         a.forEach(item => {
             item.addEventListener('mouseover', () => {
